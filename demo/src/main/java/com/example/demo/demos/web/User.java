@@ -22,8 +22,9 @@ package com.example.demo.demos.web;
 public class User {
 
     private String name;
-
     private Integer age;
+
+    private String method;
 
     public String getName() {
         return name;
@@ -39,5 +40,14 @@ public class User {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+
+    public String getMethod() {
+        return method;
+    }
+
+    public void setMethod(String method) {
+        this.method = method;
     }
 }

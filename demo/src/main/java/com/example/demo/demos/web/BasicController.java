@@ -52,8 +52,8 @@ public class BasicController {
         return "user will save: name=" + u.getName() + ", age=" + u.getAge();
     }
 
-    // http://127.0.0.1:8080/leo2html
-    @RequestMapping("/leo2html")
+    // http://127.0.0.1:8080/leohtml
+    @RequestMapping("/leohtml")
     public String html() {
         return "index.html";
     }
