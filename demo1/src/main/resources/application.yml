@@ -1,0 +1,47 @@
+server:
+  port: 8081
+  # 我们之前的路径是http://127.0.0.1:8081/leo，
+  # 如果加上这句代码后，我们的路径将变成//http://127.0.0.1:8081/test/leo
+  servlet:
+    context-path: /test
+
+# 以下代表对象
+user:
+  namea: leo
+  age: 18
+
+country: yiyang
+
+# 以下是代表数组的写法
+likes:
+  - game
+  - music
+  - sleep
+
+# 以下代表数组对象
+users:
+  - name: gogo
+    age: 18
+  - name: lili
+    age: 88
+
+#以下事例代表，在yml中是可以引用的
+baseDir: D:/windows
+tempDir: ${baseDir}/temp
+
+
+#创建类，用于封装下面的数据
+# 由spring帮我们去加较数据到对象中，一定要传诉spring加裁这组信&# 使用时候从spring中直接获取信息使用
+datasource:
+driver: com.mysql.jdbc.Driver
+url: jdbc:mysql://localhost/springboot_db
+username: root
+password: root666123
+
+
+
+
+
+
+
+

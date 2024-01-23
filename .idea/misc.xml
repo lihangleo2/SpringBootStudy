@@ -11,10 +11,14 @@
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/demo_test/pom.xml" />
         <option value="$PROJECT_DIR$/demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/demo2_junit/pom.xml" />
+        <option value="$PROJECT_DIR$/demo2/pom.xml" />
+        <option value="$PROJECT_DIR$/demo2_MyBatis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/demo2/pom.xml" />
         <option value="$PROJECT_DIR$/demo_test/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_quickstart/pom.xml" />
       </set>
