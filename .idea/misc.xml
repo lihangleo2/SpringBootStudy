@@ -16,6 +16,8 @@
         <option value="$PROJECT_DIR$/demo2/pom.xml" />
         <option value="$PROJECT_DIR$/demo2_MyBatis/pom.xml" />
         <option value="$PROJECT_DIR$/demo2_MyBatis_plus/pom.xml" />
+        <option value="$PROJECT_DIR$/demo2_Druid/pom.xml" />
+        <option value="$PROJECT_DIR$/demo3_Druid/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

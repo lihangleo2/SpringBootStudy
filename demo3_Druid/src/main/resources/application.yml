@@ -7,18 +7,17 @@ mybatis:
   mapper-locations: classpath:mappers/*xml
   type-aliases-package: com.leo.springboot.mybatis.entity
 
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ssm_db
-#    mySQL8.x驱动强制要求设置时区
-#    url: jdbc:mysql://localhost:3306/ssm_db?serverTimezone=UTC
     username: root
     password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+#    type: com.alibaba.druid.pool.DruidDataSource
+# 这里其实就是已经用了druid了，你可以认为他就是为了提升数据库查询用的
 
 
-# 设置Mp相关的配置：这个配置的意思是你的表不是user,而是tbl_user，可以用这种方式匹配上
-#mybatis-plus:
-#  global-config:
-#    db-config:
-#      table-prefix: tbl_
+
+
