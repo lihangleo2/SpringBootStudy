@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo3_Druid" />
+        <module name="demo_ssp" />
         <module name="demo2_MyBatis_plus" />
+        <module name="demo2_MyBatis" />
         <module name="demo2_junit" />
         <module name="demo" />
         <module name="demo1" />
-        <module name="demo2_MyBatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -17,7 +17,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @ResponseBody 接口返回数据
  * //
  * @RequestParam 用于接收url地址传参或者表单传参
+ * public void save(@RequestParam("name") String name,@RequestParam("age") int age) {}
+ *
  * @RequestBody 用于接收json传参
+ * public void save(@RequestBody User user) {}
+ *
  * @PathVariable 用于接收路径参数，{参数名称}描述路径参数
  * */
 
