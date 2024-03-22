@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/demo" />
+    <file type="web" url="file://$PROJECT_DIR$/demo2_MyBatis_plus" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,6 +15,7 @@
         <option value="$PROJECT_DIR$/demo2_junit/pom.xml" />
         <option value="$PROJECT_DIR$/demo2/pom.xml" />
         <option value="$PROJECT_DIR$/demo2_MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/demo2_MyBatis_plus/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
