@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.leo.springboot.bean.Star;
 import com.leo.springboot.dao.StarDao;
+import com.leo.springboot.service.StarMyBatisPlusService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -80,6 +81,15 @@ class DemoSspApplicationTests {
         //
         //这里是最终查询到得数据
         System.out.println(page.getRecords());
+    }
+
+    @Autowired
+    private StarMyBatisPlusService startService;
+
+    @Test
+    void testController() {
+//        startService.list();
+        startService.getById(1);
     }
 
 
