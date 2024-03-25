@@ -8,4 +8,18 @@ spring:
     url: jdbc:mysql://localhost:3306/ssm_db?serverTimezone=UTC
     username: root
     password: 123456
+    #使用Durid优化数据库
     type: com.alibaba.druid.pool.DruidDataSource
+
+
+
+mybatis-plus:
+  global-config:
+    db-config:
+      # 设置Mp相关的配置：这个配置的意思是你的表不是user,而是tbl_user，可以用这种方式匹配上
+      # table-prefix: tbl_
+      # 设置你主键自增长方式
+      id-type: auto
+  configuration:
+    # 配置日志信息，打印到控制台上，方便调试;记得线上的话，得把这个给注销掉
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
