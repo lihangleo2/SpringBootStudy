@@ -30,18 +30,19 @@ public class StarController {
     }
 
     //保存数据
-    @PostMapping
+    @PostMapping("/save")
     public Result save(@RequestBody Star star) {
+        //移除处理
         return new Result(startService.save(star) ? 200 : 0);
     }
 
-    @PutMapping
+    @PostMapping("/update")
     public Result update(@RequestBody Star star) {
         return new Result(startService.updateById(star) ? 200 : 0);
     }
 
-    @DeleteMapping("/{id}")
-    public Result delete(@PathVariable Integer id) {
+    @PostMapping("/deleteStar")
+    public Result delete(@RequestParam("id") Integer id) {
         return new Result(startService.removeById(id) ? 200 : 0);
     }
 
@@ -70,4 +71,10 @@ public class StarController {
         }
         return new Result(200, pageResult);
     }
+
+    //条件查询语句，可以去测试类里看
+    public void selectCondition(){
+
+    }
+
 }

@@ -12,6 +12,7 @@ import lombok.Data;
 public class Result {
     private Integer code;
     private Object data;
+    private String msg;
 
     public Result() {
 
@@ -24,5 +25,10 @@ public class Result {
     public Result(Integer code, Object data) {
         this.code = code;
         this.data = data;
+    }
+
+    public Result(String msg) {
+        this.code = 500;
+        this.msg = msg;
     }
 }
